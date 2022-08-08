@@ -9,7 +9,5 @@ export default async (bot: Client, guildId: string, channelId: string) => {
   if (!channel || channel.type != ChannelType.GuildText) {
     return;
   }
-  await channel.send({
-    files: ["meandmichael.mp4"],
-  });
+  await channel.send("https://youtu.be/RfTPBaHz9KQ Me and Michael Monday");
 };
